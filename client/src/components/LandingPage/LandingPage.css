@@ -1,0 +1,102 @@
+.landing-page {
+  background-image: url('../assets/images00.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content p {
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+.action-button {
+  font-size: 1rem;
+  color: rgb(248, 248, 248);
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 40px 130px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+.landing-page {
+  height: 70vh; /* Adjust height for medium screens */
+}
+
+.content h1 {
+  font-size: 4rem; /* Slightly smaller heading */
+}
+
+.content p {
+  font-size: 2rem; /* Smaller paragraph text */
+  margin: 20px 0;
+}
+
+.action-button {
+  padding: 30px 80px; /* Adjust button padding */
+  font-size: 0.9rem; /* Slightly smaller font for the button */
+}
+}
+
+@media (max-width: 768px) {
+.landing-page {
+  height: 60vh; /* Adjust height for smaller screens */
+}
+
+.content h1 {
+  font-size: 3rem; /* Further reduce heading size */
+}
+
+.content p {
+  font-size: 1.5rem; /* Smaller paragraph text */
+  margin: 15px 0;
+}
+
+.action-button {
+  padding: 20px 60px; /* Adjust button padding */
+  font-size: 0.8rem; /* Smaller font size for button */
+}
+}
+
+@media (max-width: 480px) {
+.landing-page {
+  height: 50vh; /* Further adjust height for mobile screens */
+}
+
+.content h1 {
+  font-size: 2.5rem; /* Smaller heading */
+}
+
+.content p {
+  font-size: 1.2rem; /* Smaller paragraph text */
+  margin: 10px 0;
+}
+
+.action-button {
+  padding: 15px 40px; /* Smaller button padding */
+  font-size: 0.75rem; /* Even smaller font size for button */
+}
+}
